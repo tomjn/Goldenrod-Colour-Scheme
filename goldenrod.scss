@@ -1,12 +1,12 @@
 $base-color: #f0f0f0;
 $highlight-color: #fafafa; //hsl(20, 96%, 75%);
-$notification-color: #f16421;
-$action-color: #f16421;
+$notification-color: #FFD500;
+$action-color: #FFD500;
 
 @import "admin";
 
 a {
-	color: #f16421;
+	color: #FFD500;
 }
 
 .mejs-controls .mejs-time-rail .mejs-time-current {
@@ -14,7 +14,7 @@ a {
 }
 
 a:hover, a:focus {
-	color: #FAC9B2;
+	color: lighten( #FFD500, 30% );
 }
 
 #adminmenu div.wp-menu-name {

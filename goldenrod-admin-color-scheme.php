@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name: Tangerine Admin Color Scheme
+ * Plugin Name: Goldenrod Admin Color Scheme
  * Description:
  * Author: Tom J Nowell
  * Version: 1.0
- * Text Domain: tangerine-color-scheme
+ * Text Domain: goldenrod-color-scheme
  * License: GPL2
  *
  * Copyright 2013 Tom J Nowell
  */
 
-class tangerine_Admin_Color_Scheme {
+class goldenrod_Admin_Color_Scheme {
 
 	function __construct() {
 		add_action( 'admin_enqueue_scripts', array( $this, 'load_default_css') );
@@ -25,10 +25,10 @@ class tangerine_Admin_Color_Scheme {
 	 */
 	function add_color_scheme() {
 		wp_admin_css_color(
-			'tangerine',
-			__( 'Tangerine', 'tangerine-color-scheme' ),
-			plugins_url( 'tangerine-.css', __FILE__ ),
-			array( '#fafafa', '#f16421', '#fafafa', '#f16421' )
+			'goldenrod',
+			__( 'Goldenrod', 'goldenrod-color-scheme' ),
+			plugins_url( 'goldenrod.css', __FILE__ ),
+			array( '#fafafa', '#FFD500', '#fafafa', '#FFD500' )
 		);
 	}
 
@@ -45,11 +45,11 @@ class tangerine_Admin_Color_Scheme {
 
 		$color_scheme = get_user_option( 'admin_color' );
 
-		if ( 'tangerine' === $color_scheme || in_array( get_current_screen()->base, array( 'profile', 'profile-network' ) ) ) {
+		if ( 'goldenrod' === $color_scheme || in_array( get_current_screen()->base, array( 'profile', 'profile-network' ) ) ) {
 			$wp_styles->registered[ 'colors' ]->deps[] = 'colors-fresh';
 		}
 
 	}
 }
 
-new tangerine_Admin_Color_Scheme();
+new goldenrod_Admin_Color_Scheme();
