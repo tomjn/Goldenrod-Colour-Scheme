@@ -7,8 +7,8 @@ $text-color: #333333 !default;
 $base-color: #222 !default;
 $icon-color: hsl( hue( $base-color ), 7%, 55% ) !default;
 $highlight-color: #0074a2 !default;
-$notification-color: lighten( #FFD500, 30% ) !default;
-$action-color: #FFD500 !default;
+$action-color: #f16421 !default;
+$notification-color: lighten( $action-color, 20% ) !default;
 
 // global
 
@@ -18,7 +18,7 @@ $link: #0074a2 !default;
 $link-focus: lighten( $link, 10% ) !default;
 
 $button-color: $action-color !default;
-$form-checked: #FFD500 !default;
+$form-checked: $action-color !default;
 
 
 // admin menu & admin-bar
@@ -60,10 +60,10 @@ $menu-customizer-text: mix( $base-color, $text-color, 40% ) !default;
 // core variables
 
 $adminbar-text-color: #fff !default;
-$adminbar-base-color: #FFD500 !default;
+$adminbar-base-color: #d54e21 !default;
 $adminbar-icon-color: hsl( hue( $adminbar-base-color ), 7%, 95% ) !default;
 $adminbar-highlight-color: #fff !default;
-$adminbar-notification-color: lighten( #FFD500, 30% ) !default;
+$adminbar-notification-color: #d54e21 !default;
 $adminbar-action-color: $adminbar-highlight-color !default;
 
 // admin menu & admin-bar
